@@ -1,7 +1,7 @@
 # weatherapp
 
 // In this solo project i have tried my best to create a 
-"sonewhat clone " of the weather apps currently available in the internet this days.
+"somewhat clone " of the weather apps currently available in the internet this days.
 Currently i am working on it.
 I have uploaded the html and css style sheet repository .
 I am left with the javascript which i am currently working on .
