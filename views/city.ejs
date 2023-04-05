@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Weather Check</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="weather-app">
+        <div class="bg">
+            <img class="weatherImage" src="image/Weather-Update.png">
+            <img class="weatherImage" src="image/<%= description %>.jpg">
+          </div>
+        <div class="container">
+            <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">THE WEATHER</h1>
+            <div>
+                <h1 class="temp"><%= temperature %></h1>
+                <div class="city-time">
+                    <h1 class="name">
+                        <%= citySearch %>
+                    </h1>
+                    <medium>
+                        <h3 class="time"><%= localTime %></h3>
+                        <h2>
+                            <%= kindOfDay %>
+                        </h2>
+                    </medium>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <form id="LocationInput" action="/" method="post">
+                <input type="text" name="cityName" class="search" placeholder="Search Location..." autocomplete="off"/>
+                <button type="submit" class="submit btn">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </button>
+                <ul class="cities">
+                    <!-- <li><button class="city btn">New York</button></li>
+                    <li><button class="city btn">Kolkata</button></li>
+                    <li><button class="city btn">Paris</button></li>
+                    <li><button class="city btn">Tokyo</button></li>  -->
+                    <li class="city">New York</li>
+                    <li class="city">California</li>
+                    <li class="city">Paris</li>
+                    <li class="city">Tokyo</li>
+                </ul>
+            </form>
+
+            
+
+
+            <ul class="details">
+                <h4>Weather details</h4>
+                <li>
+                    <span>Cloudy</span>
+                    <span class="cloud"><%= cloud %></span>
+                </li>
+                <li>
+                    <span>Humidity</span>
+                    <span class="humidity"><%= humidity %></span>
+                </li>
+                <li>
+                    <span>Wind</span>
+                    <span class="wind"><%= wind %></span>
+                </li>
+                <li>
+                    <span>Description</span>
+                    <span class="description"><%= description %></span>
+                </li>
+                    
+            </ul>
+        </div>
+    </div>
+    <!-- <script src="../cityClick.js" charset="utf-8"></script> -->
+</body>
+
+</html>
